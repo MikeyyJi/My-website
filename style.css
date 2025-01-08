@@ -1,0 +1,167 @@
+ 
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+h1, h2 {
+  color: #FF5733;
+}
+a {
+  text-decoration: none;
+  color: #FF5733;
+}
+button {
+  cursor: pointer;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #F5F5F5;
+}
+header .logo img {
+  max-height: 50px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin: 0 10px;
+}
+header nav ul li.active {
+  border-bottom: 2px solid #FF5733;
+}
+
+/* Banner Section */
+.banner {
+  position: relative;
+  background: url('banner.jpg') no-repeat center center/cover;
+  height: 400px;
+}
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.banner-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #FFF;
+  padding-top: 150px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Our Vision Section */
+.vision {
+  padding: 50px;
+  text-align: center;
+  background: #F9F9F9;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px;
+  text-align: center;
+  background: #FFF;
+}
+.testimonials blockquote {
+  font-style: italic;
+  color: #555;
+}
+
+/* Event Booking Section */
+.booking {
+  text-align: center;
+  padding: 50px;
+  background: #FF5733;
+  color: #FFF;
+}
+.cta {
+  background-color: #FFF;
+  color: #FF5733;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.cta:hover {
+  background-color: #C70039;
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background: #F9F9F9;
+}
+.gallery img {
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid #FFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Us Section */
+.contact {
+  padding: 50px;
+  background: #FFF;
+  text-align: center;
+}
+.contact input, .contact button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+.contact button {
+  background: #FF5733;
+  color: #FFF;
+  border: none;
+}
+.contact button:hover {
+  background: #C70039;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #CCC;
+}
+footer a {
+  color: #FF5733;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    background: #FFF;
+  }
+  .banner-text {
+    font-size: 18px;
+  }
+  .gallery img {
+    width: 100%;
+  }
+}
